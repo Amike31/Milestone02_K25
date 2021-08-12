@@ -1,0 +1,38 @@
+.logo-img {
+    max-height: 35px;
+}
+
+h3{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.list-question{
+    border:solid 2px #000;
+    border-radius: 10px;
+    height: auto;
+}
+
+.table{
+    border-radius: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+.choices{
+    margin-right: 15px;
+}
+
+.my-btn{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.radio-btn{
+    transform: scale(1.2);
+}
+
+input[type='radio']{
+    color:#f00
+}
