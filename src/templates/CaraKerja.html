@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <link rel="stylesheet" href="template_css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <style>
         .text1 {
             text-align: left;
@@ -25,8 +27,11 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mynavbar">
         <div class="container">
+            <div>
+                <img src="{% static 'img/Logo.jpg' %}" class="logo-img" alt="Logo">
+            </div>
             <a class="navbar-brand" href="#">
-                My Blog
+                COVIDMASTER
             </a>
             <button class="navbar-toggler navbar-toggler-right nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,11 +61,11 @@
         </div>
     </nav>
     
-            <br><br><br><br><br>
+            <br><br><br><br>
         <div class="container-fluid">
             <div class="row text-center">
                 <h2>Bagaimana Tesnya bekerja</h2>
-                <br><br><br><br>
+                <br>
             
                 <div class="row">
                     <div class="col gambar1">
@@ -68,8 +73,10 @@
                     </div>
 
                     <div class="col text1">
-                        <br><br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores cumque nemo placeat quis ex? Voluptatum distinctio magnam tempora ullam consequuntur sit voluptatem qui, nemo nesciunt soluta accusantium hic rem quasi.
+                        <br><br>
+                        Proses yang digunakan dalam pemberian rekomendasi bagi pengguna website ini berbasis machine learning. Data yang kami miliki akan dibersihkan telebih dahulu agar dapat dipelajari oleh model machine learning kami.
+                        <br><br>
+                        Kemudian kami menguji performa dari mechine learning itu agar sesuai degan beberapa kriteria, yaitu akurasi, presisi, dan sensitivitas dari hasil machine learning yang kami coba buat.
                     </div>
                 </div>
                 
@@ -79,15 +86,48 @@
                     </div>
 
                     <div class="col text2">
-                        <br><br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores cumque nemo placeat quis ex? Voluptatum distinctio magnam tempora ullam consequuntur sit voluptatem qui, nemo nesciunt soluta accusantium hic rem quasi.
+                        <br>
+                        Pengguna akan diminta untuk mengisi beberapa pertanyaan yang kemudian akan diolah oleh machine learning. Hasil dari pengolahan data dari machine learning ini kemudian akan digunakan untuk menentukan skala resiko pengguna terkena COVID-19, lalu memberikan rekomendasi ke pengguna untuk melakukan tes swab atau tidak. 
+                        <br><br>
+                        Sebagai catatan, sistem ini tidak dapat memberikan informasi akurat 100%, melainkan hanya berupa rekomendasi untuk melakukan tes swab dan memberikan alamat rumah sakit yang dapat dijadikan rujukan. 
                     </div>
                 </div>
 
             </div>
         </div>
 
+         <!--Footer-->
+    <footer class="text-center text-white pt-4" style="background-color:#0028B5;">
+        <div class="row justify-content-between">
+            <div class="col-md-4 mt-3">
+                <h4>COVIDMASTER</h4>
+                <a href="" class="me-4">
+                    <i class="fab fa-twitter fa-lg text-white"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram fa-lg text-white"></i>
+                </a>
+            </div>
             
+            <div class="col-md-3 mb-md-0 mt-3">
+                <div class="row">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.kemkes.go.id/" class="text-decoration-none text-white"> Kemenkes </a></li>
+                        <li class="list-inline-item"><a href="/Tentang" class="text-decoration-none text-white"> Tentang </a></li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/InfoRS" class="text-decoration-none text-white"> Info RS </a></li>
+                        <li class="list-inline-item"><a href="/FAQ" class="text-decoration-none text-white"> FAQ </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 COVIDMASTER. All Rights Reserved
+        </div>
+    </footer>   
         
 
 
