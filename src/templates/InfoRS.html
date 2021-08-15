@@ -10,15 +10,20 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/InfoRS.css' %}"> 
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
-    <title>Homepage</title>
+    <title>Info Rumah Sakit</title>
   </head>
 
   <body>
+    <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">
-                My Blog
+                <div>
+                    <img src="{% static 'img/Logo.jpg' %}" class="logo-img" alt="Logo" style="max-height: 35px;"> COVIDMASTER
+                </div>
             </a>
             <button class="navbar-toggler navbar-toggler-right nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,23 +53,31 @@
         </div>
     </nav>
    
-
+    <!--Search Bar-->
     <br><br><br>
-    <!-- SEARCH BAR/WRAPPER (BLM DI STYLING)-->
-    <div id='searchWrapper'>
-        <input
-            id='cari-list'
-            type="text"
-            name="searchBar"
-            id="searchBar"
-            placeholder="Search Hospital"
-        />
-    </div>    
+    <div class="wrapper">
+        <div class="container">
+            <center><div id='searchWrapper' style="width: 500px; margin: 38px auto">
+                <div class="searchBox" style="position: relative; width: 500px; height: 60px;">
+                    <div class="btn btn_common" style="position: absolute; top: 0; right: 0; width: 60px; height: 80%; background: #185ADB; z-index: 1; cursor: pointer">
+                        <i class="fas fa-search" style=" position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%; color: #fff; font-size: 20"></i>
+                    </div>
+                    <input
+                        id='cari-list'
+                        type="text"
+                        name="searchBar"
+                        id="searchBar"
+                        placeholder="Search Hospital"
+                        style="border: 0; outline: none; color: #8b7d77; position: absolute; top: 0; left: 0; width: 100%; padding: 10px 20px; border-radius: 3px; font-size: 18px; background-color: #DBE6FD;"
+                    />
+                </div>
+            </div></center>   
+        </div> 
+    </div>
 
-    <br>
-    <!-- DROPDOWN Pilih Kota (BLM DI STYLING)-->
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- Dropdown-->
+    <center><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #185ADB">
           Pilih Kota
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -72,28 +85,62 @@
           <li><a class="dropdown-item" href="#bekasi">Bekasi</a></li>
           <li><a class="dropdown-item" href="#depok">Depok</a></li>
         </ul>
-      </div>
+      </div></center>
 
-    <br>
-    <!-- DATABASE RS (BLM DI STYLING)-->
+    <!-- List RS -->
+    <br><br>
     <div class='listRS'>
         <ul id="jakarta">
-            <li class="item-list"><h3>RSU Fatmawati</h3><p>Jl. RS Fatmawati Cilandak, Jakarta Selatan<br>(021) 7501524</p></li>
-            <li class="item-list"><h3>RSU Dr Cipto Mangunkusumo</h3><p>Jl. Diponegoro No. 71, Jakarta Pusat<br>(021) 31930808</p></li>
-            <li class="item-list"><h3>RS PAD Gatot Soebroto</h3><p>Jl. Dr A. Rahman Saleh 24, Jakarta Pusat<br>(021) 3840702</p></li>            
+            <li class="item-list"><h3>RSU Fatmawati</h3><p>Jl. RS Fatmawati Cilandak, Jakarta Selatan<br>(021) 7501524</p></li><br>
+            <li class="item-list"><h3>RSU Dr Cipto Mangunkusumo</h3><p>Jl. Diponegoro No. 71, Jakarta Pusat<br>(021) 31930808</p></li><br>
+            <li class="item-list"><h3>RS PAD Gatot Soebroto</h3><p>Jl. Dr A. Rahman Saleh 24, Jakarta Pusat<br>(021) 3840702</p></li><br>        
         </ul>
         <ul id="bekasi">
-            <li class="item-list"><h3>RS Mitra Keluarga Pratama</h3><p>Jl. Raya Jatimekar, Kota Bekasi<br>(021) 85511000</p></li>
-            <li class="item-list"><h3>RS Siloam Bekasi Timur</h3><p>Jl. Chairil Anwar Blu Plaza Nomor 27, Kelurahan Margahayu, Kota Bekasi<br>(021) 80611900</p></li>
-            <li class="item-list"><h3>RSU Bella</h3><p>Jl. Ir H Juanda Nomor 141 Kota Bekasi<br>(021) 8801778</p></li>
+            <li class="item-list"><h3>RS Mitra Keluarga Pratama</h3><p>Jl. Raya Jatimekar, Kota Bekasi<br>(021) 85511000</p></li><br>
+            <li class="item-list"><h3>RS Siloam Bekasi Timur</h3><p>Jl. Chairil Anwar Blu Plaza Nomor 27, Kelurahan Margahayu, Kota Bekasi<br>(021) 80611900</p></li><br>
+            <li class="item-list"><h3>RSU Bella</h3><p>Jl. Ir H Juanda Nomor 141 Kota Bekasi<br>(021) 8801778</p></li><br>
         </ul>
         <ul id="depok">
-            <li class="item-list"><h3>RSUD Kota Depok</h3><p>Jl. Raya Muchtar No. 99, Sawangan, Kota Depok<br>(021) 251 8602 514</p></li>
+            <li class="item-list"><h3>RSUD Kota Depok</h3><p>Jl. Raya Muchtar No. 99, Sawangan, Kota Depok<br>(021) 251 8602 514</p></li><br>
             <li class="item-list"><h3>RS Hermina Depok</h3><p>Jl. Raya Siliwangi No. 50, Pancoran Mas, Kota Depok<br>(021) 7720 2525, 1500 488</p></li>
         </ul>
     </div>
+    <br><br><br>
 
-    <script src="{% static 'js/app.js' %}"></script>    
+    <script src="{% static 'js/app.js' %}"></script>  
+
+    <!--Footer-->
+    <footer class="text-center text-white pt-4" style="background-color:#0028B5;">
+        <div class="row justify-content-between">
+            <div class="col-md-4 mt-3">
+                <h4>COVIDMASTER</h4>
+                <a href="" class="me-4">
+                    <i class="fab fa-twitter fa-lg text-white"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram fa-lg text-white"></i>
+                </a>
+            </div>
+            
+            <div class="col-md-3 mb-md-0 mt-3">
+                <div class="row">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.kemkes.go.id/" class="text-decoration-none text-white"> Kemenkes </a></li>
+                        <li class="list-inline-item"><a href="/Tentang" class="text-decoration-none text-white"> Tentang </a></li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/InfoRS" class="text-decoration-none text-white"> Info RS </a></li>
+                        <li class="list-inline-item"><a href="/FAQ" class="text-decoration-none text-white"> FAQ </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 COVIDMASTER. All Rights Reserved
+        </div>
+    </footer>  
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
