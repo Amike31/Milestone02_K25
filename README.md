@@ -28,3 +28,6 @@ pip install -U scikit-learn
 python manage.py runserver
 ```
 6. Copy link yang muncul ke browser apapun untuk menjalankan website
+
+# Link Website yang Telah Dideploy
+https://covidmaster.herokuapp.com/
