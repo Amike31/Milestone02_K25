@@ -16,3 +16,15 @@ Nama Kelompok   : CovidExpert
 9. Rahadyanino Maheswara (16520449), Front-End halaman InfoRS
 
 ## Cara Menjalankan Website
+1. Install python
+2. Install Django
+3. Install module dengan command dibawah ini
+```
+pip install -U scikit-learn
+```
+4. Clone/Download repository ini
+5. Masuk ke directory src dan jalankan dengan command berikut
+```
+python manage.py runserver
+```
+6. Copy link yang muncul ke browser apapun untuk menjalankan website
