@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <link rel="stylesheet" href="template_css/style.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Tentang.css' %}">
+
 
     <title>Kesimpulan Tes Mandiri COVID-19</title>
   </head>
@@ -19,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mynavbar">
         <div class="container">
             <div>
-                <img src="{% static 'img/Logo.jpg' %}" class="logo-img" alt="Logo">
+                <img src="{% static 'img/Logo.jpg' %}" class="logo-img" alt="Logo" style="max-height: 35px;">
             </div>
             <a class="navbar-brand" href="/">
                 COVIDMASTER
@@ -52,6 +53,8 @@
         </div>
     </nav>
    
+
+    <!--ResultSafe-->
     <div class="container-fluid d-flex flex-column justify-content-center">
         <div class="row">
             <div class="position-absolute top-50 start-50 translate-middle" style="text-align: center;">
@@ -97,6 +100,39 @@
             </div> 
         </div>
     </div>
+
+    <!--Footer-->
+    <footer class="text-center text-white pt-4" style="background-color:#0028B5;">
+        <div class="row justify-content-between mw-100">
+            <div class="col-md-4 mt-3">
+                <h4>COVIDMASTER</h4>
+                <a href="" class="me-4">
+                    <i class="fab fa-twitter fa-lg text-white"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram fa-lg text-white"></i>
+                </a>
+            </div>
+            
+            <div class="col-md-3 mb-md-0 mt-3">
+                <div class="row">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.kemkes.go.id/" class="text-decoration-none text-white"> Kemenkes </a></li>
+                        <li class="list-inline-item"><a href="/Tentang" class="text-decoration-none text-white"> Tentang </a></li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/InfoRS" class="text-decoration-none text-white"> Info RS </a></li>
+                        <li class="list-inline-item"><a href="/FAQ" class="text-decoration-none text-white"> FAQ </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 COVIDMASTER. All Rights Reserved
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
